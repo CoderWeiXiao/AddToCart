@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6S-Ky-6Bo">
+                                <rect key="frame" x="50" y="537" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="POl-mR-Qm5"/>
+                                    <constraint firstAttribute="width" constant="80" id="cGQ-zI-NGd"/>
+                                </constraints>
+                                <state key="normal" title="加入购物车"/>
+                                <connections>
+                                    <action selector="clickAddToCartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEC-ZH-afh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKc-3l-BW0">
+                                <rect key="frame" x="229" y="537" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="R0x-uK-GDp"/>
+                                    <constraint firstAttribute="height" constant="30" id="wTA-oa-Gx2"/>
+                                </constraints>
+                                <state key="normal" title="立即购买"/>
+                                <connections>
+                                    <action selector="clickBuyImmiditelyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C2n-pn-L9N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irs-x8-38L">
+                                <rect key="frame" x="147.5" y="318.5" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RMg-Nq-JAP"/>
+                                    <constraint firstAttribute="width" constant="80" id="c3j-W0-rTo"/>
+                                </constraints>
+                                <state key="normal" title="选择属性"/>
+                                <connections>
+                                    <action selector="clickChooseAttrBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w63-Of-NZd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Irs-x8-38L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9ZK-bg-fn3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N6S-Ky-6Bo" secondAttribute="bottom" constant="100" id="CSv-bQ-m5F"/>
+                            <constraint firstItem="N6S-Ky-6Bo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="OXL-XX-kTD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fKc-3l-BW0" secondAttribute="bottom" constant="100" id="jzM-Xy-12y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fKc-3l-BW0" secondAttribute="trailing" constant="50" id="kAM-UR-btU"/>
+                            <constraint firstItem="Irs-x8-38L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xA4-ig-jbr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
