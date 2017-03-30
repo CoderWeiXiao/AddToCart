@@ -229,6 +229,8 @@
         if (!_selectedAttrArray) {
             _selectedAttrArray=[NSMutableArray array];
         }
+        [_selectedAttrArray removeAllObjects];
+        
         for (AttrView* attrView in self.attrViewArray) {
             Attr* attr=attrView.goodsAttr.attr[attrView.selectedBtn.tag-AttrBtnTag];
             [_selectedAttrArray addObject: attr];
